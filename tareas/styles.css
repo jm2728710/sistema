@@ -1,0 +1,97 @@
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+header {
+    background: #c19a58;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background: #d89946b7;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.carousel {
+    width: 600px;      
+    margin: auto;      
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;       
+    height: 200px;     
+    object-fit: cover; 
+}
+
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #d1a957;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+}
+
+button {
+    margin: 10px;
+}
+
+/* Acordeón */
+.acordeon {
+    width: 100%;
+    padding: 10px;
+    background: #b39769;
+    border: none;
+    cursor: pointer;
+}
+
+.panel {
+    display: none;
+    padding: 10px;
+    background: #ffdc6ac0;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+footer {
+    background: #a18f45;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer input, footer textarea {
+    width: 80%;
+    margin: 5px;
+    padding: 8px;
+}
+
+footer button {
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}

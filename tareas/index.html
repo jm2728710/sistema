@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Noticias de Software</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Noticias de Software</h1>
+</header>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#tipos">Tipos</a>
+    <a href="#noticias">Noticias</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<!-- MARQUEE -->
+<marquee>Última noticia: Nuevo software educativo | Actualización importante en software libre</marquee>
+
+<!-- CARRUSEL -->
+<section class="carousel">
+    <div class="slides">
+        <img src="img1.jpg">
+        <img src="img2.jpg">
+        <img src="img3.jpg">
+    </div>
+</section>
+
+<!-- ALERTA -->
+<button onclick="mostrarAlerta()">Dale like</button>
+
+<!-- ACORDEON -->
+<section id="tipos">
+    <h2>Tipos de Software</h2>
+
+    <button class="acordeon">Software de sistema</button>
+    <div class="panel">Controla el hardware (Windows, Linux)
+         <br>
+        El software de sistema es un tipo de programa informático diseñado para ejecutar el hardware y las aplicaciones de un ordenador. Si consideramos el sistema informático como un modelo por capas, el software de sistema actúa como interfaz entre el hardware y las aplicaciones de usuario. El sistema operativo ( SO ) es el ejemplo más conocido de software de sistema. El SO gestiona todos los demás programas del ordenador.
+        <br>
+        El software de sistema se utiliza para administrar las funciones básicas de una computadora, incluyendo el sistema operativo del disco , el software de utilidad para la administración de archivos, los sistemas operativos y el software y hardware de las aplicaciones. Se ejecuta en segundo plano, manteniendo las funciones básicas de la computadora para que los usuarios puedan ejecutar software de aplicaciones de nivel superior para realizar ciertas tareas.
+         <br>
+        En esencia, el software de sistema proporciona una plataforma sobre la que se ejecuta el software de aplicación. También funciona como intermediario, permitiendo a los usuarios interactuar con el hardware y el software del ordenador, es decir, con las aplicaciones y los programas.
+        <br>
+        <img src="imgcar.jpg">
+    
+    </div>
+
+    <button class="acordeon">Software de aplicación</button>
+    <div class="panel">Programas como Word, Excel
+    Un software de aplicación es un tipo específico de programas, también llamado “aplicación”, cuya función es permitir al usuario llevar a cabo tareas de distinto tipo y finalidad, como pueden ser trabajos, cálculos, navegación web, videojuegos y cualquier otro fin distinto al mantenimiento del sistema. En esto se diferencia del software de sistema.
+    <br>
+    Forman parte del software de aplicación todos aquellos programas que no tienen que ver con el funcionamiento de la computadora, sino que se incorporan al sistema para que funcione como herramienta de trabajo (como hojas de cálculo, procesador de palabras o programas de diseño gráfico), de ocio (como videojuegos, reproductores de audio o video) o de información (como enciclopedias digitales o navegador de internet), entre muchas otras funciones posibles.
+    <br>
+    Normalmente, el software de aplicación es diseñado y comercializado aparte del resto de la computadora, y su selección e instalación en el sistema es a elección del usuario. Asimismo, puede ofrecerse como parte de proyectos abiertos o colaborativos de descarga gratuita en internet.
+    <br>  
+    En informática, se llama software al conjunto de programas, instrucciones y componentes informáticos que permiten llevar a cabo diferentes tareas, en contraposición al hardware, esto es, los aspectos tangibles y materiales que componen la computadora.
+    <br>
+    <img src="imgcar2.jpg">
+    </div>
+    <button class="acordeon">Software de programación</button>
+    <div class="panel">Herramientas como Java, Python
+        El software para programación en 2025 continúa evolucionando para mejorar la productividad y eficiencia de los desarrolladores. Se espera un mayor uso de tecnologías de inteligencia artificial y aprendizaje automático en la programación, lo que permitirá a los programadores automatizar tareas repetitivas y mejorar la calidad del código.
+        <br>
+        También se espera un aumento en la popularidad de lenguajes de programación de alta capacidad como Python y una mayor adopción de metodologías ágiles y DevOps para una mejor colaboración y entrega más rápida de software.
+        <br>
+        Además, con el auge de la nube y el Internet de las cosas, se espera una mayor demanda de software de programación para aplicaciones en la nube y dispositivos conectados.
+        <br>
+        Todo ello hace que el software de programación continue avanzando y mejorando para satisfacer las necesidades de los desarrolladores y los usuarios finales.
+        <br>
+        <img src="imgcar33.jpg">
+    </div>
+</section>
+
+<!-- CARDS -->
+<section id="noticias" class="cards">
+
+    <div class="card">
+        <img src="imgcardd.png">
+        <h3>Nuevo sistema operativo</h3>
+        <p>Tipo: Sistema</p>
+        <p>Lanzamiento innovador...</p>
+        <a href="noticia1.html">Leer más</a>
+    </div>
+
+    <div class="card">
+        <img src="imgcard.jpg">
+        <h3>App educativa</h3>
+        <p>Tipo: Aplicación</p>
+        <p>Mejora el aprendizaje...</p>
+        <a href="noticia2.html">Leer más</a>
+    </div>
+
+    <div class="card">
+        <img src="imgcard1.jpg">
+        <h3>Nuevo lenguaje</h3>
+        <p>Tipo: Programación</p>
+        <p>Más rápido y eficiente...</p>
+        <a href="noticia3.html">Leer más</a>
+    </div>
+
+</section>
+<footer id="contacto">
+    <h2>Deja tu comentario</h2>
+
+    <p>Email: correo@ejemplo.com</p>
+    
+
+    <!-- FORMULARIO -->
+    <form id="formContacto">
+        <input type="text" id="nombre" placeholder="Tu nombre" required>
+        <input type="email" id="email" placeholder="Tu email" required>
+        <textarea id="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- BOTÓN SUBIR -->
+    <button onclick="subirArriba()">⬆ Volver arriba</button>
+
+    <p id="fecha"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
